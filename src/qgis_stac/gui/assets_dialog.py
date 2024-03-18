@@ -87,6 +87,7 @@ class AssetsDialog(QtWidgets.QDialog, DialogUi):
         self.parent = parent
         self.main_widget = main_widget
         self.vis_url_string = '/vsicurl/'
+        self.vis_gs_string = '/vsigs/'
         self.download_result = {}
         self.load_assets = {}
         self.download_assets = {}
@@ -484,7 +485,7 @@ class AssetsDialog(QtWidgets.QDialog, DialogUi):
                 [AssetLayerType.COG.value]
         ) and \
                 asset_type != AssetLayerType.GEOTIFF.value:
-            asset_href = f"{self.vis_url_string}" \
+            asset_href = f"{self.vis_gs_string}" \
                          f"{asset.href}"
         elif asset_type in ''.join([
             AssetLayerType.NETCDF.value]):

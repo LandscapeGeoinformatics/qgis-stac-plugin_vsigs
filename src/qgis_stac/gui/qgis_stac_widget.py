@@ -510,8 +510,8 @@ class QgisStacWidget(QtWidgets.QMainWindow, WidgetUi):
             if use_start_date else None
         end_dte = self.end_dte.dateTime() \
             if use_end_date else None
-
-        collections = self.get_selected_collections()
+        # For recursive search , set title as ID
+        collections = self.get_selected_collections(title=True)
         page_size = settings_manager.get_current_connection().page_size
         spatial_extent = self.extent_box.outputExtent() \
             if self.extent_box.isChecked() else None
@@ -983,7 +983,6 @@ class QgisStacWidget(QtWidgets.QMainWindow, WidgetUi):
             collection = index.data(data_index)
             item = collection.title if title else collection.id
             collections_items.append(item)
-
         return collections_items
 
     def load_collections(self, collections):

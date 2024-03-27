@@ -485,7 +485,11 @@ class AssetsDialog(QtWidgets.QDialog, DialogUi):
                 [AssetLayerType.COG.value]
         ) and \
                 asset_type != AssetLayerType.GEOTIFF.value:
-            asset_href = f"{self.vis_gs_string}" \
+            if (asset.href.startswith("gs://")):
+                href = asset.href.replace("gs://","")
+                asset_href = f"{self.vis_gs_string}{href}"
+            else:
+                asset_href = f"{self.vis_url_string}" \
                          f"{asset.href}"
         elif asset_type in ''.join([
             AssetLayerType.NETCDF.value]):

@@ -14,7 +14,7 @@ from qgis.gui import QgsMessageBar
 
 from ..conf import settings_manager
 from ..api.client import Client
-from ..utils import tr
+from ..utils import log, tr
 
 from qgis.PyQt.uic import loadUiType
 

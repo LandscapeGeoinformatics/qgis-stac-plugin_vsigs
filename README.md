@@ -18,7 +18,7 @@ Customization Author : Landscap Geoinfomatics Lab (University of Tartu)
 
 ### Installation (From zip file)
 
-1. Download the release 1.1.2b from ![here](https://github.com/LandscapeGeoinformatics/qgis-stac-plugin_vsigs/releases/download/first_release/qgis_stac.1.1.2b.zip)
+1. Download the release 1.1.2b from [here](https://github.com/LandscapeGeoinformatics/qgis-stac-plugin_vsigs/releases/download/first_release/qgis_stac.1.1.2b.zip)
 2. Open the QGIS plugin manager, then select the **Install from ZIP**
 3. Click on "..." and select the zip file download in step 1
 4. Click install plugin

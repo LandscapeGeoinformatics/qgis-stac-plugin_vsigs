@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "qgis-stac-plugin_vsigs"
-version = "1.1.1b"
-description = "QGIS plugin for reading STAC API catalogs (Google cloud access with vsigs)"
-authors = "Kartoza <info@kartoza.com>, Landscape Geoinformatics Lab (University of Tartu)"
+name = "qgis-stac-plugin"
+version = "1.1.2b"
+description = "QGIS plugin for reading STAC API catalogs"
+authors = ["Kartoza <info@kartoza.com>", "Lanscape Geoinformatics Lab (University of Tartu)"]
 license = "GPL v3.0"
 
 [tool.poetry.dependencies]

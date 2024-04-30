@@ -13,7 +13,8 @@ bug fixes and new features; therefore development will be slow for now.
 However we’re dedicated to maintaining the project. 
 For assistance or if you have funding to contribute 
 please reach out to Kartoza ([info@kartoza.com](mailto:info@kartoza.com))**
-Customization Author : Landscap Geoinfomatics Lab (University of Tartu)
+
+Customization : Landscap Geoinfomatics Lab (University of Tartu)
 
 
 ### Installation (From zip file)

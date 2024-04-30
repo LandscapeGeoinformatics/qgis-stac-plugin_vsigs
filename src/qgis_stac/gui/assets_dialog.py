@@ -327,7 +327,12 @@ class AssetsDialog(QtWidgets.QDialog, DialogUi):
             )
             return
 
-        url = self.sign_asset_href(asset.href)
+        href = asset.href
+        if (asset.href.startswith("gs://")):
+            href = asset.href.replace("gs://","")
+            href = f"file:{self.vis_gs_string}{href}"
+
+        url = self.sign_asset_href(href)
         extension = Path(asset.href).suffix
         extension_suffix = extension.split('?')[0] if extension else ""
         title = f"{asset.title}{extension_suffix}"
